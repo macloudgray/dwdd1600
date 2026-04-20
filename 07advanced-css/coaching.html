@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="MaCloud Gray">
+    <meta name="description" content="Learn about what Optimazze does">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="optimazze.css">
+    <title> Optimazze health: Coaching</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+         <img src="images/logo.png" alt="Logo for Optimazze" width="65" height="50">
+        <span>Optimazze <em>Beyond Limits</em></span>
+    </header>
+
+    <!-- start the page head navigation-->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li class="active"><a href="coaching.html">Coaching</a></li>
+        </ul>
+
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Book Your Personal Consultation Here</h1>
+        <p>At Optimazze, we pride ourselves on maintaining one of the nation’s most elite personal training teams. If
+            you value our content and seek further guidance from industry-leading experts, here is how to get started.
+            Our specialized coaches provide comprehensive support across fitness, nutrition, and sleep optimization.</p>
+
+<h1> Enter your information here</h1>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend> Contct Information </legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-675-4321"></label>
+                <label>Email*<input type="text" name="email" required placeholder="JohntaviousOctavious@gmail.com"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Coaching frequency</legend>
+
+                <label><input type="radio" name="method" value="BiMonthly"> Bi-Monthly </label>
+                <label><input type="radio" name="method" value="Monthly"> Once per month </label>
+                <label><input type="radio" name="method" value="BiWeekly"> Bi-Weekly ( Most popular) </label>
+                <label><input type="radio" name="method" value="Weekly"> Weekly </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Type of coach</legend>
+                <label> <input type="checkbox" name="Gym" value="selected"> Personal Trainer</label>
+                <label> <input type="checkbox" name="Sleep" value="selected"> Sleep consultant</label>
+                <label> <input type="checkbox" name="garage" value="selected"> Nutrition consultant</label>
+
+                <label> Budget Per Month
+                    <select name="time">
+                        <option value="none">Please select</option>
+                        <option value="Morning"> Less than $100</option>
+                        <option value="Noon"> $100-250</option>
+                        <option value="Afternoon"> $250-500</option>
+                        <option value="Evening"> $500-1000+</option>
+                    </select>
+                </label>
+
+            </fieldset>
+
+            <label>
+                To help us find your perfect match, please describe your personality, learning style, and whether you
+                prefer a strict or more patient coaching approach. Let us know if you have a gender preference and what
+                your primary fitness goals or past challenges are. We will then use your response to cross-reference our
+                database and pair you with the best possible trainer for your journey. <textarea
+                    name="Comments"></textarea>
+            </label>
+
+            <input type="submit" value="Send Delivery Request">
+        </form>
+
+    </main>
+
+    <!--Start of form order-->
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; MaCloud Gray &bull; Optimazze Health</p>
+
+
+    </footer>
+</body>
+
+</html>

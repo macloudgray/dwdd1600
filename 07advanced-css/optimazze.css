@@ -1,0 +1,334 @@
+/*Prevent Problems on Different Browsers*/
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Zalando Sans", sans-serif;
+    margin: 0;
+}
+
+/*Header stuff here*/
+header {
+    background-color: #eaeaea;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #5c99fa;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+header em {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #26613C;
+}
+
+
+
+
+/* small screen navigation */
+@media only screen and (max-width: 800px) {
+ nav ul {
+    margin: 0;
+    padding: 0;
+ }
+nav a{
+    display: block;
+    text-align: center;
+    padding: .8rem;
+    color: #C4B398;
+    text-decoration: none;
+    border-bottom: solid 1px #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav .active a {
+    background-color: #26613C;
+    color: white;
+    background-image: linear-gradient(to bottom, #024873, #5c99fa);}
+}
+
+/*end small screens*/
+
+
+
+/* large screen navigation */
+@media only screen and (min-width: 801px) {
+
+   nav {
+    background-color: #71706f;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #C4B398;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #024873;
+    color: #C4B398;
+}
+
+nav li a:hover {
+    color: white;
+}
+
+}
+
+/*end LARGE screens*/
+
+
+
+
+
+/*Navigation portion here*/
+
+
+/*main stuff here*/
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #5c99fa;
+}
+
+.what h2 {
+    color: #26613C;
+    margin-bottom: 0.2rem;
+}
+
+.author h2 {
+    color: #5c99fa;
+}
+
+main h2 {
+    color: #26613C;
+}
+
+main h3 {
+    color: #26613C;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main ol {
+    padding: 0.5rem 30px;
+    background-color: #efefef;
+    max-width: 420px;
+}
+
+main dl dt {
+    color: #26613C;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #000;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main strong {
+    font-weight: 700;
+    color: #26613C;
+}
+
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #71706f;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 200px;
+    color: #eaeaea;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(180, 4, 18);
+}
+
+/*main image stuff here*/
+figure.Wrapper {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.Wrapper img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 600px;
+
+}
+
+figure.Wrapper figcaption {
+    text-align: center;
+    font-size: .75rem;
+
+}
+
+/* Gallery Stuff */
+
+.hero {
+    width: 100%;
+    height: auto;
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b64e11;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+}
+.gallery img:hover {
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+/*Coaching order here*/
+
+.myForm fieldset {
+    border: 1px solid #43a0b6;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #43a0b6;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=tel],
+.myForm textarea {
+    display: block;
+}
+
+.myForm [type=text],
+.myForm [type=tel],
+.myForm select,
+.myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6 rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myform [type=submit] {
+    background-color: #43a0b6;
+    border: none;
+    padding: 1rem, 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/*footer stuff here*/
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: .8rem;
+    color: #333;
+    letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 78rem;
+    margin: 0 auto;
+}
